@@ -4,7 +4,7 @@ const { CreateEmbed } = require('../../Utility/CreateEmbed');
 module.exports = class StopCommand extends Command {
   constructor() {
     super('stop', {
-      aliases: ['stop'],
+      aliases: ['stop', 'dc'],
       description: {
         content: 'Stop playing music',
       },
