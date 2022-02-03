@@ -9,7 +9,7 @@ const Color = {
 function CreateEmbed(color, message) {
   const embed = new MessageEmbed()
     .setColor(Color[color])
-    .setFooter(`© カグチ ${new Date().getFullYear()}`);
+    .setTimestamp()
   if (message) embed.setDescription(message);
   return embed;
 }
