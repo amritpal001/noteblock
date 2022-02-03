@@ -72,6 +72,6 @@ module.exports = class NoteClient extends AkairoClient {
       erela: this.erela,
     });
     this.ListenerHandler.loadAll();
-    this.login();
+    this.login('process.env.DISCORD_TOKEN');
   }
 };
