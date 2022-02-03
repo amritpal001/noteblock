@@ -10,6 +10,7 @@ const config = require('../config');
 const { CreateEmbed } = require('../Utility/CreateEmbed');
 const { logger } = require('../Utility/Logger');
 require('../Extenders/Node');
+require('dotenv').config()
 
 module.exports = class NoteClient extends AkairoClient {
   constructor() {
