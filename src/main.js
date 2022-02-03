@@ -1,7 +1,8 @@
 /* eslint global-require: "off" */
 const http = require('http');
 const { logger } = require('./Utility/Logger');
-require('dotenv').config();
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 const GLitch = (process.env.PROJECT_DOMAIN !== undefined
   && process.env.PROJECT_INVITE_TOKEN !== undefined
